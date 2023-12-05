@@ -2,9 +2,10 @@
 #include <day01.h>
 
 int main() {
-    std::string filePath = "/home/dkennetz/advoco23/inputs/day01/input.txt";
-    aoc::Day01 day(filePath);
-    day.printInputFile();
-    std::cout << "Hello, world!" << std::endl;
+    aoc::Day01 day;
+    const auto rc = day.parseInputFile();
+    const auto soln1 = day.solvePartOne();
+
+    std::cout << "Part 1 solution: " << soln1 << std::endl;
     return 0;
 }
