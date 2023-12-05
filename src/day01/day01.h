@@ -14,6 +14,7 @@ public:
     // Don't know if these can be negative
     int parseInputFile();
     int solvePartOne();
+    int solvePartTwo();
 
 private:
     std::string inputFile_ = "./input1.txt";
